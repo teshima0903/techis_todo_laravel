@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+             // ↓ この行を追加
+             \Illuminate\Support\Facades\Schema::defaultStringLength(191);
     }
 }
